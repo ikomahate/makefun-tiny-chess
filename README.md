@@ -10,10 +10,18 @@ competition HTTP environment protocol. No model calls or external engine data.
 
 This main.py was produced by the official makefun compress command from the
 real Codex-authored engine-source.py. Its decompressed Python payload is
-byte-for-byte identical to the proven engine's payload. Packaging changes the
-entrypoint bytes; **this candidate has not run an official Elo match**.
-Do not assign the proven engine's Elo score to this candidate or replace that
-engine before a new official grade is authorized and confirms the result.
+byte-for-byte identical to the original engine's payload.
+
+## Verified candidate grade
+
+One official local grade on 2026-11-17: **1279 Elo**, 3 wins, 0 draws, 3 losses.
+Docker driver, Python 3.13, exact candidate main.py: 2864 bytes, SHA-256
+07e9b2e4cfc87ed9b7bb4f30ca9681da6c5bffa2f997374dd210496b9d8db6db.
+Replay matched byte for byte; L1 regrade reproduced byte for byte.
+Wins: depth-2, depth-4, nodes-100k. Losses: depth-3, nodes-250k, nodes-500k.
+All games ended in checkmate. This is a local practice result, not a submission
+receipt, final ranking, or prize qualification. Local runner Node 22.23.4 differs
+from the kit server Node 26.13.1; their harness code digest matches.
 
 The separate proven engine is 3501 bytes, SHA-256
 4fab95d64bd85e4c7df2b7031b93ebce10edd9cf0a147f51fa3ff4d668201773.
